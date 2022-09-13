@@ -1,8 +1,6 @@
 # Prueba entrevista
 
-<center>
-![WhatsApp Image 2022-09-07 at 3 17 02 PM (1)](https://user-images.githubusercontent.com/91103352/189925689-7a36ff0b-17d3-49b1-b84d-7dfc2f4ef00a.jpeg)
-</center>
+![requerimiento](https://user-images.githubusercontent.com/91103352/189927425-33b336f3-77cb-4f85-8517-006b3d9e5300.jpeg)
 
 ## Estructura
 
