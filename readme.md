@@ -20,12 +20,12 @@ class Validate{
      * @param $text String
      */
     public static function validateInputText($text = null){
-        dd(gettype($text))
+
         $fstchar = substr($text,0, 1);
         $lstchar = substr($text, -1);
         $lenghtStr = strlen($text);
         return view('validate.validate',[
-            "text" => strlen($text)>10?$fstchar.($lenghtStr-2).$lstchar : $text
+            "text" => gettype($text)=='string'?strlen($text)>10?$fstchar.($lenghtStr-2).$lstchar : $text:null
 
         ]);
     }
@@ -39,6 +39,7 @@ class Validate{
 <h1>Prueba</h1>
 <h2>Input</h2>
 <ul>
+    <li>4</li>
     <li>word</li>
     <li>Localization</li>
     <li>Internationalization</li>
@@ -46,6 +47,7 @@ class Validate{
 </ul>
 <h2>Output</h2>
 <ul>
+    <li>{{ InputValidate::validateInputText(4) }}</li>
     <li>{{ InputValidate::validateInputText('word') }}</li>
     <li>{{ InputValidate::validateInputText('Localization') }}</li>
     <li>{{ InputValidate::validateInputText('Internationalization') }}</li>
@@ -59,4 +61,4 @@ class Validate{
 
 ### Resultado
 
-![Captura de pantalla 2022-09-13 a la(s) 9 23 30 a  m](https://user-images.githubusercontent.com/91103352/189927037-baa7bab6-f883-445f-a811-958fbf2cb950.png)
+![screen](https://user-images.githubusercontent.com/91103352/189929467-ef95e035-8456-40af-9915-016c066d71bc.png)
