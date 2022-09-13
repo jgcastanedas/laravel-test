@@ -20,6 +20,7 @@ class Validate{
      * @param $text String
      */
     public static function validateInputText($text = null){
+        dd(gettype($text))
         $fstchar = substr($text,0, 1);
         $lstchar = substr($text, -1);
         $lenghtStr = strlen($text);

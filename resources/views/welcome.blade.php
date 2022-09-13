@@ -13,6 +13,7 @@
         <h1>Prueba</h1>
         <h2>Input</h2>
         <ul>
+            <li>4</li>
             <li>word</li>
             <li>Localization</li>
             <li>Internationalization</li>
@@ -20,6 +21,7 @@
         </ul>
         <h2>Output</h2>
         <ul>
+            <li>{{ InputValidate::validateInputText(4) }}</li>
             <li>{{ InputValidate::validateInputText('word') }}</li>
             <li>{{ InputValidate::validateInputText('Localization') }}</li>
             <li>{{ InputValidate::validateInputText('Internationalization') }}</li>

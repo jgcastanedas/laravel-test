@@ -16,7 +16,7 @@ class Validate{
         $lstchar = substr($text, -1);
         $lenghtStr = strlen($text);        
         return view('validate.validate',[
-            "text" => strlen($text)>10?$fstchar.($lenghtStr-2).$lstchar : $text
+            "text" => gettype($text)=='string'?strlen($text)>10?$fstchar.($lenghtStr-2).$lstchar : $text:null
             
         ]);
     }
